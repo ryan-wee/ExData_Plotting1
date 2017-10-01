@@ -1,3 +1,5 @@
+# This code reads the data file, subsets the data according to 2 days, and plots a histogram of global_active_power.
+
 dataFile <- "./household_power_consumption.txt"
 housingData <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSetData <- housingData[housingData$Date %in% c("1/2/2007","2/2/2007") ,]
