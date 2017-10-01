@@ -1,3 +1,5 @@
+#This code reads the data, subsets the data according to dates, extracts the relevant variables and their data, and plots a line graph showing data against voltage.
+
 dataFile <- "./household_power_consumption.txt"
 housingData <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSetData <- housingData[housingData$Date %in% c("1/2/2007","2/2/2007") ,]
