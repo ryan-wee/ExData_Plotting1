@@ -1,3 +1,5 @@
+#This code reads the data, subsets according to date, and subplots 4 different plots in a 2x2 matrix. 
+
 dataFile <- "./household_power_consumption.txt"
 housingData <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSetData <- housingData[housingData$Date %in% c("1/2/2007","2/2/2007") ,]
